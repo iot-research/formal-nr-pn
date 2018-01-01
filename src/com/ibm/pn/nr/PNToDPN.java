@@ -27,7 +27,7 @@ import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
 public class PNToDPN {
 
 	public static void main(String[] args) {
-		String path = "/Users/rakesh/eclipse-workspace2/PN_NR_Proj/Ref/data5.pnml";
+		String path = "/Users/rakesh/git/iot-research/pn/PN_NR_Proj/Ref/data6.pnml";
 		
 		 // We assume the path to the PNML file is provided as argument to this program.
        File f = new File(path);
@@ -154,7 +154,7 @@ public class PNToDPN {
 	                					int i=0;
 	                					for(TransitionHLAPI tr: remoteTrans)
 	                					{
-	                						TransitionHLAPI tgn = new TransitionHLAPI("Tmqtt.out"+tr.getId()+"_"+i);  //add to loc_Tr map, name for channel??
+	                						TransitionHLAPI tgn = new TransitionHLAPI("Tmqtt.out"+tr.getId()+"_"+loc);  //add to loc_Tr map, name for channel??
 	                						tgn.setNameHLAPI(new NameHLAPI(loc));   //the new place and transition will be at same location as new in Place
 	                						//populateMap(loc_new_trans, loc, tgn);
 	                						
@@ -182,13 +182,18 @@ public class PNToDPN {
 	                				System.out.println("Location is process = "+loc);
 	                				System.out.println("Size of outarcs "+pl.getOutArcsHLAPI());
 	                				
-	                				//for all out locations, we generate a new place
-	                				PlaceHLAPI newpl = new PlaceHLAPI(pl.getId()+"_"+loc);
-	                				newpl.getInArcsHLAPI().addAll(getArcsFromOriginLocation(pl.getInArcsHLAPI(), loc, newpl));  //add all local (only) in arcs
-	                				newpl.getOutArcsHLAPI().addAll(getArcsFromTargetLocation(pl.getOutArcsHLAPI(), loc, newpl));  //add all local (only) out arcs
-	                	
-	                				//add to loc:PL map	                				
-	                				populateMap(loc_places, loc, newpl);
+	                				//for all out locations, we generate a new place, if not already generated before
+	                				String plId = pl.getId()+"_"+loc;
+	                				PlaceHLAPI newpl = getPlaceIfExists(plId, page);
+	                				if(newpl == null)
+	                				{
+		                				newpl = new PlaceHLAPI(plId);
+		                				newpl.getInArcsHLAPI().addAll(getArcsFromOriginLocation(pl.getInArcsHLAPI(), loc, newpl));  //add all local (only) in arcs
+		                				newpl.getOutArcsHLAPI().addAll(getArcsFromTargetLocation(pl.getOutArcsHLAPI(), loc, newpl));  //add all local (only) out arcs
+		                	
+		                				//add to loc:PL map	                				
+		                				populateMap(loc_places, loc, newpl);
+	                				}                				
 	                				
 	                				//find remote input transitions and generate mqtt.in for each of them
 	                				for(String inLoc: inLocations)
@@ -199,17 +204,17 @@ public class PNToDPN {
 	                					for(TransitionHLAPI tr: remoteTrans)
 	                					{
 	                						//generate new place and new transition representing mqtt.in in new channel
-	                						PlaceHLAPI pcn = new PlaceHLAPI("P"+"_"+loc+"_"+i);  //add to loc:pl map	     
+	                						PlaceHLAPI pcn = new PlaceHLAPI("P"+"_"+loc+"_"+inLoc+"_"+i);  //add to loc:pl map	     
 	                						populateMap(loc_places, loc, pcn);
 	                						
-	                						TransitionHLAPI tcn = new TransitionHLAPI("Tmqtt.in"+tr.getId()+"_"+i);  //add to loc_Tr map, name for channel??
+	                						TransitionHLAPI tcn = new TransitionHLAPI("Tmqtt.in"+tr.getId()+"_"+loc+"_"+inLoc+"_"+i);  //add to loc_Tr map, name for channel??
 	                						tcn.setNameHLAPI(new NameHLAPI(loc));   //the new place and transition will be at same location as new out Place
 	                						//populateMap(loc_new_trans, loc, tcn);
 	                						
 	                						//generate arcs to connect these all
 	                						//ArcHLAPI a1 = new ArcHLAPI("a1."+loc+i, tr, pcn);
-	                						ArcHLAPI a2 = new ArcHLAPI("a2."+loc+i, pcn, tcn);
-	                						ArcHLAPI a3 = new ArcHLAPI("a3."+loc+i, tcn, newpl);
+	                						ArcHLAPI a2 = new ArcHLAPI("a2."+loc+"_"+inLoc+i, pcn, tcn);
+	                						ArcHLAPI a3 = new ArcHLAPI("a3."+loc+"_"+inLoc+i, tcn, newpl);
 	                						
 	                						//tr.getOutArcsHLAPI().add(a1);
 	                						//pcn.getInArcsHLAPI().add(a1);
@@ -376,6 +381,20 @@ public class PNToDPN {
 			if(src != null) src.setContainerPageHLAPI(page);
 			if(tgt != null) tgt.setContainerPageHLAPI(page);
 		}
+	}
+	
+	private static PlaceHLAPI getPlaceIfExists(String id, PageHLAPI page)
+	{
+		List<PlaceHLAPI> places = page.getObjects_PlaceHLAPI();
+		for(PlaceHLAPI pl: places)
+		{
+			if(pl.getId().contentEquals(id))
+			{
+				System.out.println("Page already exists "+id);
+				return pl;
+			}
+		}
+		return null;
 	}
 	
 	private static void setTransitionsPage(List<TransitionHLAPI> trans, PageHLAPI p)

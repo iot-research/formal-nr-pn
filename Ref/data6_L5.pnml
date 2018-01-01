@@ -1,0 +1,27 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="net.L30d98a41.91ebc6" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <page id="toppage.L30d98a41.91ebc6">
+      <name>
+        <text>myname</text>
+      </name>
+      <place id="P7835fa48.257004_L30d98a41.91ebc6"/>      <arc id="a3.L30d98a41.91ebc6_L7c63fb4a.8d87b40" source="Tmqtt.inT94a77544.1f4678_L30d98a41.91ebc6_L7c63fb4a.8d87b4_0" target="P7835fa48.257004_L30d98a41.91ebc6"/>      
+      <transition id="Tmqtt.inT94a77544.1f4678_L30d98a41.91ebc6_L7c63fb4a.8d87b4_0">
+        <name>
+          <text>L30d98a41.91ebc6</text>
+        </name>
+      </transition>
+      <arc id="b2L30d98a41.91ebc6" source="P7835fa48.257004_L30d98a41.91ebc6" target="T7835fa48.257004"/>      
+      
+      <transition id="T7835fa48.257004">
+        <name>
+          <text>L30d98a41.91ebc6</text>
+        </name>
+      </transition>
+      <place id="P_L30d98a41.91ebc6_L7c63fb4a.8d87b4_0"/>      <arc id="a2.L30d98a41.91ebc6_L7c63fb4a.8d87b40" source="P_L30d98a41.91ebc6_L7c63fb4a.8d87b4_0" target="Tmqtt.inT94a77544.1f4678_L30d98a41.91ebc6_L7c63fb4a.8d87b4_0"/>    
+      
+      </page>
+    <name>
+      <text>net.L30d98a41.91ebc6</text>
+    </name>
+  </net>
+</pnml>

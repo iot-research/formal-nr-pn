@@ -24,9 +24,9 @@ public class PNToNR3 {
 	
 	public static void main(String[] args) 
 	{
-		String path = "/Users/rakesh/eclipse-workspace2/PN_NR_Proj/Ref/data5_L2.pnml";
+		String path = "/Users/rakesh/git/iot-research/pn/PN_NR_Proj/Ref/data6_L4.pnml";
 		
-		String json = "/Users/rakesh/eclipse-workspace2/PN_NR_Proj/Ref/data5.json";
+		String json = "/Users/rakesh/git/iot-research/pn/PN_NR_Proj/Ref/data6.json";
 		
 		 
         File f = new File(path);
