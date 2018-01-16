@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pnmlcoremodel="http://org.pnml.tools/epnk/pnmlcoremodel">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pnmlcoremodel="http://org.pnml.tools/epnk/pnmlcoremodel">
   <pnmlcoremodel:Page xmi:id="_egnqoO5kEee4yJIQH2MY1w">
     <object xmi:type="pnmlcoremodel:Transition" xmi:id="_tp5W4O5kEee4yJIQH2MY1w"/>
     <object xmi:type="pnmlcoremodel:Place" xmi:id="_uwGJ8O5kEee4yJIQH2MY1w">
@@ -26,20 +26,6 @@
     <children xmi:type="notation:Shape" xmi:id="_85kmEe5kEee4yJIQH2MY1w" type="2001" element="_85kmEO5kEee4yJIQH2MY1w" fontName=".AppleSystemUIFont" lineColor="1250275">
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_85kmEu5kEee4yJIQH2MY1w" x="153" y="108"/>
     </children>
-    <children xmi:type="notation:Node" xmi:id="_HnmusO5oEee4yJIQH2MY1w" type="2009" element="_HnmHoO5oEee4yJIQH2MY1w">
-      <children xmi:type="notation:DecorationNode" xmi:id="_Hnn80O5oEee4yJIQH2MY1w" type="5004"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Hnmuse5oEee4yJIQH2MY1w"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_Hnmusu5oEee4yJIQH2MY1w" fontName=".SF NS Text" fontHeight="12"/>
-      <styles xmi:type="notation:FillStyle" xmi:id="_Hnmus-5oEee4yJIQH2MY1w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HnmutO5oEee4yJIQH2MY1w" x="396" y="225"/>
-    </children>
-    <children xmi:type="notation:Node" xmi:id="_N5-0oO7JEee4yJIQH2MY1w" type="2009" element="_N5-NkO7JEee4yJIQH2MY1w">
-      <children xmi:type="notation:DecorationNode" xmi:id="_N5-0pe7JEee4yJIQH2MY1w" type="5004"/>
-      <styles xmi:type="notation:DescriptionStyle" xmi:id="_N5-0oe7JEee4yJIQH2MY1w"/>
-      <styles xmi:type="notation:FontStyle" xmi:id="_N5-0ou7JEee4yJIQH2MY1w" fontName=".SF NS Text" fontHeight="12"/>
-      <styles xmi:type="notation:FillStyle" xmi:id="_N5-0o-7JEee4yJIQH2MY1w"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N5-0pO7JEee4yJIQH2MY1w" x="315" y="225"/>
-    </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_egoRse5kEee4yJIQH2MY1w"/>
     <edges xmi:type="notation:Connector" xmi:id="_BftDsO5lEee4yJIQH2MY1w" type="4001" element="_BfscoO5lEee4yJIQH2MY1w" source="_85kmEe5kEee4yJIQH2MY1w" target="_tp7MEO5kEee4yJIQH2MY1w" lineColor="1250275">
       <styles xmi:type="notation:FontStyle" xmi:id="_BftDse5lEee4yJIQH2MY1w" fontName=".AppleSystemUIFont"/>
@@ -58,20 +44,6 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GMUj0u5lEee4yJIQH2MY1w" points="[-1, -1, -53, 0]$[50, -1, -2, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GMVK4O5lEee4yJIQH2MY1w" id="(1.0,0.55)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GMVK4e5lEee4yJIQH2MY1w" id="(0.14285714285714285,0.525)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_JcwScO5oEee4yJIQH2MY1w" type="4004" source="_HnmusO5oEee4yJIQH2MY1w" target="_zn6NcO5kEee4yJIQH2MY1w">
-      <styles xmi:type="notation:FontStyle" xmi:id="_JcwSce5oEee4yJIQH2MY1w" fontName=".AppleSystemUIFont"/>
-      <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JcwScu5oEee4yJIQH2MY1w" points="[0, 0, 11, 35]$[-11, -32, 0, 3]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jcw5gO5oEee4yJIQH2MY1w" id="(0.45,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jcw5ge5oEee4yJIQH2MY1w" id="(0.5,0.925)"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_PPX6QO7JEee4yJIQH2MY1w" type="4004" source="_N5-0oO7JEee4yJIQH2MY1w" target="_uwGxAO5kEee4yJIQH2MY1w">
-      <styles xmi:type="notation:FontStyle" xmi:id="_PPX6Qe7JEee4yJIQH2MY1w" fontName=".AppleSystemUIFont"/>
-      <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PPX6Qu7JEee4yJIQH2MY1w" points="[0, 0, -18, 38]$[17, -33, -1, 5]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PPYhUO7JEee4yJIQH2MY1w" id="(0.46,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PPYhUe7JEee4yJIQH2MY1w" id="(0.475,0.85)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

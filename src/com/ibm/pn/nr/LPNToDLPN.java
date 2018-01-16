@@ -24,10 +24,10 @@ import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
 
-public class PNToDPN3 {
+public class PNToDLPN {
 
 	public static void main(String[] args) {
-		String path = "/Users/rakesh/git/iot-research/pn/PN_NR_Proj/Ref/data6.pnml";
+		String path = "/Users/rakesh/git/iot-research/pn/PN_NR_Proj/Ref/data7.pnml";
 		
 		 // We assume the path to the PNML file is provided as argument to this program.
        File f = new File(path);
