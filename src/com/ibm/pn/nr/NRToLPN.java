@@ -22,7 +22,7 @@ import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
 
-public class NRToPN2 {
+public class NRToLPN {
 
 	
 	//private static String JSON = "[{\"id\":\"3605506d.13ea28\",\"type\":\"inject\",\"z\":\"537f6244.50253c\",\"name\":\"Temp\",\"topic\":\"\",\"location\":\"6e4d9d36.e0a3fc\",\"payload\":\"\",\"payloadType\":\"date\",\"repeat\":\"\",\"crontab\":\"\",\"once\":false,\"x\":275,\"y\":141,\"wires\":[[\"f21d5751.1ca54\"]]},{\"id\":\"e48ad5.ea968528\",\"type\":\"inject\",\"z\":\"537f6244.50253c\",\"name\":\"Speed\",\"topic\":\"\",\"location\":\"6e4d9d36.e0a3fc\",\"payload\":\"\",\"payloadType\":\"date\",\"repeat\":\"\",\"crontab\":\"\",\"once\":false,\"x\":280,\"y\":247,\"wires\":[[\"f21d5751.1ca54\"]]},{\"id\":\"ccd0ae63.5d947\",\"type\":\"inject\",\"z\":\"537f6244.50253c\",\"name\":\"Vibration\",\"topic\":\"\",\"location\":\"6e4d9d36.e0a3fc\",\"payload\":\"\",\"payloadType\":\"date\",\"repeat\":\"\",\"crontab\":\"\",\"once\":false,\"x\":279,\"y\":347,\"wires\":[[\"f21d5751.1ca54\"]]},{\"id\":\"af9048e5.01c33\",\"type\":\"trigger\",\"z\":\"537f6244.50253c\",\"op1\":\"1\",\"op2\":\"0\",\"op1type\":\"str\",\"op2type\":\"str\",\"duration\":\"0\",\"extend\":false,\"units\":\"ms\",\"reset\":\"\",\"name\":\"Alarm\",\"x\":740.5,\"y\":159.75,\"wires\":[[]]},{\"id\":\"f21d5751.1ca54\",\"type\":\"function\",\"z\":\"537f6244.50253c\",\"name\":\"Compute Node\",\"func\":\"\\nreturn msg;\",\"outputs\":1,\"noerr\":0,\"location\":\"6e4d9d36.e0a3fc\",\"x\":526.5,\"y\":241.75,\"wires\":[[\"af9048e5.01c33\"]]},{\"id\":\"6e4d9d36.e0a3fc\",\"type\":\"location\",\"z\":\"\",\"name\":\"Room1\",\"host\":\"9.1.75.78\",\"port\":\"1880\"}]";

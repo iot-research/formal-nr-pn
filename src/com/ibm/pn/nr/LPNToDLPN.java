@@ -24,7 +24,7 @@ import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
 
-public class PNToDLPN {
+public class LPNToDLPN {
 
 	public static void main(String[] args) {
 		String path = "/Users/rakesh/git/iot-research/pn/PN_NR_Proj/Ref/data7.pnml";

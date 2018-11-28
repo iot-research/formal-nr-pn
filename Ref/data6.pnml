@@ -111,6 +111,20 @@
             <element xsi:nil="true"/>
             <layoutConstraint xsi:type="notation:Bounds" x="423" y="169" width="73" height="28"/>
           </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.5">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
+            <styles xsi:type="notation:DescriptionStyle" description=""/>
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".SF NS Text" fontHeight="12" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="250" y="135" width="30" height="17"/>
+          </children>
+          <children visible="true" type="2009" element="//@net.0/@page.0/@labelproxy.6">
+            <children xsi:type="notation:DecorationNode" visible="true" type="5004"/>
+            <styles xsi:type="notation:DescriptionStyle" description=""/>
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".AppleSystemUIFont" fontHeight="12" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <styles xsi:type="notation:FillStyle" fillColor="16777215" transparency="-1"/>
+            <layoutConstraint xsi:type="notation:Bounds" x="387" y="135" width="-1" height="-1"/>
+          </children>
           <styles xsi:type="notation:DiagramStyle" pageX="0" pageY="0" pageWidth="100" pageHeight="100" description=""/>
           <edges visible="true" type="4001" element="a0" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.2" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.10">
             <styles xsi:type="notation:ConnectorStyle" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="0" lineWidth="-1"/>
@@ -181,12 +195,28 @@
             <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9863013698630136,0.45454545454545453)"/>
             <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.0,0.375)"/>
           </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.16" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.10" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="0" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".AppleSystemUIFont" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 34, 36]$[-32, -32, 2, 4]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.46,0.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7,0.825)"/>
+          </edges>
+          <edges xsi:type="notation:Connector" visible="true" type="4004" source="//@net.0/@page.0/@toolspecific.0/@diagram/@children.17" target="//@net.0/@page.0/@toolspecific.0/@diagram/@children.11" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false" lineColor="0" lineWidth="-1">
+            <styles xsi:type="notation:FontStyle" fontColor="0" fontName=".AppleSystemUIFont" fontHeight="9" bold="false" italic="false" underline="false" strikeThrough="false"/>
+            <element xsi:nil="true"/>
+            <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -6, 27]$[0, -9, -6, 18]$[0, -24, -6, 3]"/>
+            <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.47,0.0)"/>
+            <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.55,0.9)"/>
+          </edges>
         </diagram>
         <labelProxy label="//@net.0/@page.0/@object.0/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.1/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.2/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.3/@name"/>
         <labelProxy label="//@net.0/@page.0/@object.4/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.5/@name"/>
+        <labelProxy label="//@net.0/@page.0/@object.9/@name"/>
       </toolspecific>
       <transition id="T94a77544.1f4678">
         <name>
@@ -254,6 +284,14 @@
         </graphics>
       </transition>
       <place id="P94a77544.1f4678">
+        <name>
+          <graphics>
+            <line shape="line" color="#000000" width="1.0"/>
+            <offset x="-4.0" y="43.0"/>
+            <font family=".SF NS Text" size="12pt"/>
+          </graphics>
+          <text>P1 </text>
+        </name>
         <graphics>
           <position x="254.0" y="92.0"/>
           <dimension x="40.0" y="40.0"/>
@@ -282,6 +320,13 @@
         </graphics>
       </arc>
       <place id="P7835fa48.257004">
+        <name>
+          <graphics>
+            <offset x="-11.0" y="43.0"/>
+            <font size="12pt"/>
+          </graphics>
+          <text>P2</text>
+        </name>
         <graphics>
           <position x="398.0" y="92.0"/>
           <dimension x="40.0" y="40.0"/>
